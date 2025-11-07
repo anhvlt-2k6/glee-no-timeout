@@ -217,7 +217,7 @@ done
 # Cleanup and Notify user
 rm -rf $DEFAULT_DECRYTION_PATH $DEFAULT_ENCRYPTION_PATH || true;
 
-echo -e -n "Generated successfully new license file:\n"
+echo -e -n "\nGenerated successfully new license file:\n"
 cat "$DEFAULT_OUTPUT_PATH/$OUTPUT_ENCRYPTED_LICENSE_FILE"
 
 echo -e -n "\nNote: You may need to replace /opt/gitlab/embedded/service/gitlab-rails/.license_encryption_key.pub with this public key content:\n" 
